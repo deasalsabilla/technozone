@@ -194,14 +194,17 @@
 
                                     // Tambahkan WHERE jika query tidak kosong
                                     $sql_query = "SELECT tb_produk.*, tb_kategori.nm_kategori 
-              FROM tb_produk 
-              LEFT JOIN tb_kategori ON tb_produk.id_kategori = tb_kategori.id_kategori";
+        FROM tb_produk 
+        LEFT JOIN tb_kategori ON tb_produk.id_kategori = tb_kategori.id_kategori";
 
                                     if (!empty($query)) {
                                         $sql_query .= " WHERE tb_produk.nm_produk LIKE '%$query%' 
-                    OR tb_kategori.nm_kategori LIKE '%$query%'
-                    OR tb_produk.desk LIKE '%$query%'";
+            OR tb_kategori.nm_kategori LIKE '%$query%'
+            OR tb_produk.desk LIKE '%$query%'";
                                     }
+
+                                    // Tambahkan ORDER BY
+                                    $sql_query .= " ORDER BY tb_produk.id_produk ASC";
 
                                     $sql = mysqli_query($koneksi, $sql_query);
 
