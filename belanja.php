@@ -1552,7 +1552,7 @@
                             <!-- Footer Payment Area End Here -->
                             <!-- Begin Copyright Area -->
                             <div class="copyright text-center pt-25">
-                                <span><a target="_blank" href="https://www.templateshub.net">Designed by: Dea Salsabilla</a></span>
+                                <span><a target="_blank" href="https://www.instagram.com/dea.salsa.503/">Designed by: Dea Salsabilla</a></span>
                             </div>
                             <!-- Copyright Area End Here -->
                         </div>
